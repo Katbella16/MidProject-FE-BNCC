@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lexend', sans-serif;
+    color: black;
+    font-weight: bolder;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background-02-01.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100vw;
+    height: 90px;
+    background-color: #fbeec2;
+    border-bottom: 5px black;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 2;
+}
+
+#headerright-home{
+    margin-right: 2rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+#headerright-portofolio{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.headerright :hover{
+    color: #fc3e00;
+    transition: .4s;
+}
+
+.decoration{
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    right: 20px;
+    animation: animasitiga 1s linear 3;
+}
+
+.content h1{
+    font-size: 164px;
+    font-family: 'DM Serif Display', serif;
+    padding: 170px 200px;
+    color: white;
+    display: flex;
+    animation: animasisatu 2s ease-in;
+}
+
+.content h2{
+    width: 60vw;
+    font-size: 35px;
+    margin-top: -140px;
+    margin-left: auto;
+}
+
+#contentname{
+    animation: animasidua .5s linear 10;
+}
+
+.aboutme{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #ede6d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutleft img{
+    top: 0;
+    width: 400px;
+    max-width: 100%;
+}
+
+.aboutright{
+    width: 500px;
+    height: 480px;
+    max-width: 100%;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    text-align: justify;
+    background-color: #ffff;
+    border-radius: 20px;
+}
+
+#aboutright-h1{
+    letter-spacing: 0;
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+    color: #e58d05;
+}
+
+.aboutcontent{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skills{
+    background-color: #ede6d4;
+    padding: 5rem 5rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.skills-text h1{
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 80px;
+    color: white;
+    padding: 10px 15px;
+    background-color: #5073b3;
+    border-radius: 40px;
+    margin-bottom: -20px;
+}
+
+.skills-list{
+    bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skills-image{
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.skills-list h3{
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+
+.education{
+    background-color: #ede6d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 0;
+}
+
+#education-title{
+    font-family:'DM Serif Display', serif;
+    font-size: 50px;
+    color:  #e58d05;
+    margin-bottom: 20px;
+}
+
+table{
+    text-align: center;
+}
+
+th{
+    font-weight: bolder;
+}
+
+th,td{
+    border: 2px solid #5073b3;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.contactform{
+    background-color: #ede6d4;
+    padding: 40px 30px 0;
+}
+
+#form-title{
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    color: #e58d05;
+}
+
+#form-h3{
+    font-size: 15px;
+}
+
+#labelname, #labelemail, #labellinkein, #labelcomments{
+    font-size: 20px;
+}
+
+#name, #email, #linkedin{
+    font-size: 15px;
+    width: 700px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#submit{
+    font-size: 20px;
+    color: white;
+    background-color: #5073b3;
+    width: 100px;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px 0 30px 550px;
+}
+
+#Comment{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    width: 700px;
+}
+
+#copyright{
+    text-align: center;
+    font-size: 12px;
+    padding: 30px;
+    color: white;
+    background-color: #030f25;
+}
+
+@keyframes animasisatu {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animasidua{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animasitiga {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width:821px){
+    .header{
+        width: 100vw;
+        height: 100px;
+    }
+
+    #headerright-home{
+        margin-right: 1.5rem;
+        font-size: 1.5rem;
+    }
+    
+    #headerright-portofolio{
+        font-size: 1.5rem; 
+    }
+
+    .decoration{
+        top: 150px;
+        right: 30px;
+    }
+
+    .content h1{
+        font-size: 170px;
+        padding: 300px 100px 260px;
+        letter-spacing: 2px;
+    }
+    
+    .content h2{
+        width: 60vw;
+        font-size: 45px;
+        margin-left: 20%;
+    }
+
+    .skills-text h1{
+        font-size: 70px;
+        padding: 7px 15px;
+        margin-right: 30px;
+    }
+
+    .skills-image{
+        width: 140px;
+        margin-right: 30px;
+    }
+    
+    .skills-list h3{
+        margin-right: 30px;
+        font-size: 13px;
+    }
+
+    .aboutcontent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutleft img{
+        width: 350px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #aboutright-h1{
+        font-size: 55px;
+        margin-bottom: -10px;
+    }
+    
+    .aboutright{
+        width: 430px;
+        height: 390px;
+        max-width: 100%;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+
+    th,td{
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    #labelname, #labelemail, #labellinkein, #labelcomments{
+        font-size: 15px;
+    }
+    
+    #name, #email, #linkedin{
+        font-size: 13px;
+        width: 550px;
+    }
+    
+    #submit{
+        font-size: 15px;
+        padding: 4px;
+        margin: 10px 0 30px 450px;
+    }
+
+    #Comment{
+        font-size: 13px;
+        width: 550px;
+    }
+    
+    #copyright{
+        font-size: 10px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:376px){
+    .header{
+        width: 100vw;
+        height: 100px;
+        padding: 0rem 1rem;
+    }
+
+    .headerleft img{
+        height: 50px;
+    }
+
+    #headerright-home{
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    
+    #headerright-portofolio{
+        font-size: 1rem; 
+    }
+
+    .background {
+        background-position: -20px 100px;
+    }
+
+    .decoration{
+        height: 100px;
+        top: 120px;
+        right: 30px;
+    }
+
+    .content h1{
+        font-size: 130px;
+        padding: 230px 50px 240px;
+        letter-spacing: 2px;
+    }
+    
+    .content h2{
+        width: 70vw;
+        font-size: 30px;
+        margin-left: 20%;
+    }
+
+    .skills {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5rem 1rem;
+        align-items: center;
+    }
+
+    .skills-text h1{
+        font-size: 30px;
+        margin-top: -5px;
+        width: 230px;
+        }
+
+    .skills-image{
+        width: 90px;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    
+    .skills-list h3{
+        justify-content: space-around;
+        font-size: 13px;
+    }
+
+    .aboutcontent{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .aboutleft img{
+        width: 250px;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    #aboutright-h1{
+        font-size: 40px;
+    }
+    
+    .aboutright{
+        width: 90%;
+        height: 480px;
+        padding: 0 20px;
+        font-size: 13px;
+        justify-content: center;
+    }
+
+    #education-title {
+        font-size: 30px;
+    }
+
+    th,td{
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .contactform{
+        padding: 40px 20px;
+    }
+
+    #form-title {
+        font-size: 27px;
+    }
+
+    #form-h3 {
+        margin-top: -10px;
+    }
+
+    #labelname, #labelemail, #labellinkein, #labelcomments{
+        font-size: 15px;
+    }
+    
+    #name, #email, #linkedin{
+        font-size: 13px;
+        width: 300px;
+    }
+    
+    #submit{
+        font-size: 15px;
+        padding: 4px;
+        margin: 10px 0 30px 200px;
+    }
+
+    #Comment{
+        font-size: 13px;
+        width: 300px;
+    }
+    
+    #copyright{
+        font-size: 10px;
+        justify-content: center;
+    }
+}
