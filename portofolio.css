@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lexend', sans-serif;
+    color: black;
+    font-weight: bolder;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: url(bgporto-01.png);
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+.header{
+    width: 100vw;
+    height: 90px;
+    background-color: #fbeec2;
+    border-bottom: 5px black;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 2;
+}
+
+#headerright-home{
+    margin-right: 2rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+#headerright-portofolio{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.headerright :hover{
+    color: #fc3e00;
+    transition: .4s;
+}
+
+.decoration{
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 330px;
+    animation: animasidua 1.5s linear 4;
+}
+
+.content h1{
+    font-size: 130px;
+    font-family: 'DM Serif Display', serif;
+    padding: 300px 200px;
+    color: #e58d05;
+    display: flex;
+    animation: animasitiga 2s ease-in;
+}
+
+#folio {
+    font-size: 130px;
+    font-family: 'DM Serif Display', serif;
+    color: white;
+    display: flex;
+    animation: animasisatu 1s linear 10;
+}
+
+.porto{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ede6d4;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.porto1-left img{
+    width: 600px;
+    margin-right: 40px;
+}
+
+.porto2-right img{
+    width: 550px;
+}
+
+.porto1right, .porto2left {
+    width: 500px;
+}
+
+#porto1-h1, #porto2-h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+    color: #e58d05;
+}
+
+.porto1content, .porto2content {
+    display: flex;
+    flex-direction: row;
+}
+
+.porto2content{
+    margin-bottom: 40px;
+}
+
+#porto2-p, #porto1-p {
+    letter-spacing: 2px;
+    width: 80%;
+    text-align: justify;
+}
+
+#copyright{
+    text-align: center;
+    font-size: 12px;
+    padding: 30px;
+    color: white;
+    background-color: #030f25;
+}
+
+@keyframes animasisatu{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animasidua {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animasitiga {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 
+
+@media only screen and (max-width:821px){
+    .header{
+        width: 100vw;
+        height: 100px;
+    }
+
+    #headerright-home{
+        margin-right: 1.5rem;
+        font-size: 1.5rem;
+    }
+    
+    #headerright-portofolio{
+        font-size: 1.5rem; 
+    }
+
+    .background {
+        background-position: -20px 20px;
+    }
+
+    .decoration{
+        top: 40%;
+        left: 20%;
+    }
+    
+    .content h1{
+        font-size: 120px;
+        padding: 90% 200px;
+    }
+    
+    #folio {
+        font-size: 120px;
+    }
+
+    .porto{
+        padding: 30px auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: auto;
+    }
+
+    #porto1-h1, #porto2-h1{
+        font-size: 50px;
+    }
+
+    .porto1-left img{
+        width: 500xp;
+        margin-bottom: 20px;
+    }
+
+    .porto2-right img{
+        width: 450xp;
+        margin-top: 20px;
+    }
+    
+    .porto1content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #porto2-p, #porto1-p {
+        font-size: 13px;
+    }
+
+    .porto2content {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    
+    .porto2content{
+        margin-bottom: 40px;
+    }
+    
+    @media only screen and (max-width:376px){
+        .header{
+            width: 100vw;
+            height: 100px;
+            padding: 0rem 1rem;
+        }
+
+        .headerleft img{
+            height: 50px;
+        }
+    
+        #headerright-home{
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+        
+        #headerright-portofolio{
+            font-size: 1rem; 
+        }
+    
+        .background {
+            background-position: -20px 20px;
+        }
+    
+        .decoration{
+            height: 70px;
+            top: 40%;
+            left: 10%;
+        }
+        
+        .content h1{
+            font-size: 70px;
+            padding: 150% 20px;
+        }
+        
+        #folio {
+            font-size: 70px;
+        }
+    
+        .porto{
+            padding: 50px auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    
+        #porto1-h1, #porto2-h1{
+            font-size: 40px;
+        }
+    
+        .porto1-left img{
+            width: 280px;  
+            margin-bottom: 20px;
+        }
+    
+        .porto2-right img{
+            margin-top: 20px;
+            width: 280px;
+        }
+        
+        .porto1content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    
+        .porto2content {
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+
+        #porto2-p, #porto1-p {
+            font-size: 13px;
+        }
+        
+        .porto2content{
+            margin-bottom: 40px;
+        }
+    }
+}
